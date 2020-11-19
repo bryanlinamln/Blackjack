@@ -6,8 +6,8 @@ import random
 # Returns card to be added to stack
 def generateCard(cardsInPlay):
     # Possible suits of cards
-    # Clubs is C, Diamonds is D, Heart is H, and Clover is R
-    Suits = ['C', 'D', 'H', 'R']
+    # Clubs is C, Diamonds is D, Heart is H, and S is Spades
+    Suits = ['C', 'D', 'H', 'S']
     # Possible values for cards
     Value = ['A', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K']
     # Suit of generated card
@@ -30,7 +30,7 @@ def generateCard(cardsInPlay):
         elif suit == 2:
             suit = 'H'
         else:
-            suit = 'R'
+            suit = 'S'
 
         # Gets Value for card
         if value == 0:
